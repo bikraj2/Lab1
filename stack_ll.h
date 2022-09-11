@@ -1,7 +1,8 @@
 #ifndef stack_ll_h
 #define stack_ll_h
 #include "linked.h"
-class stack_ll{
+#include "stack.h"
+class stack_ll:stack{
     public:
         stack_ll();
         ~stack_ll();
@@ -12,5 +13,6 @@ class stack_ll{
         bool isFull();
     private:
         LinkedList l;
+        int top_index;
 };
 #endif

@@ -21,9 +21,10 @@ class node{
 
 //defining a class for linked list
 class LinkedList{
+    public:
     node *HEAD;
     node *TAIL;
-    public:
+    
         LinkedList();
         ~LinkedList();
         bool isEmpty();
