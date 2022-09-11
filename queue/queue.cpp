@@ -19,7 +19,7 @@ void Queue_Arr::enqueue(int data){
         cout<<"The queue is already full. Cannnot add any more item"<<endl;
     }
 }
-a Queue_Arr :: dequeue(){
+int Queue_Arr :: dequeue(){
     try{
         if(isEmpty()){
             throw 2;
@@ -41,13 +41,14 @@ bool Queue_Arr:: isEmpty(){
     }
 }
 bool Queue_Arr:: isFull(){
-    if(){
+    if(r==MAX_SIZE-1){
         return true;
     }else{
         return false;
     }
+    asdf
 }
-a Queue_Arr:: front(){
+int Queue_Arr:: front(){
     try{
         if(isEmpty()){
             throw 1;
@@ -58,7 +59,7 @@ a Queue_Arr:: front(){
         return NULL;
     }
 }
-a Queue_Arr:: back(){
+int Queue_Arr:: back(){
     try{
         if(isEmpty()){
             throw 1;
