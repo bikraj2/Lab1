@@ -3,18 +3,20 @@
 #define MAX_SIZE 10
 #include "queue.h"
 #include "linked.h"
-class Queue_ll:public Queue{
+
+template <class T>
+class Queue_ll:public Queue<T>{
 
 public:
     Queue_ll();
-    void enqueue (int data);
-    int dequeue();
+    void enqueue (T data);
+    void dequeue(T &value);
     bool isEmpty();
     bool isFull();
-    int front();
-    int back();
+    void front(T &value);
+    void back(T &value);
 private:
-    LinkedList l;
+    LinkedList <T>l;
     int top_index;
 };
 

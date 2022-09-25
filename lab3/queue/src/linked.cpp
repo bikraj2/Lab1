@@ -7,6 +7,7 @@
  * 
  */
 #include <iostream>
+
 #include "linked.h"
 
 using namespace std;
@@ -151,3 +152,4 @@ bool LinkedList<T>::search(T data){
 template class LinkedList<char>;
 template class LinkedList<int>;
 template class LinkedList<float>;
+template class LinkedList<double>;

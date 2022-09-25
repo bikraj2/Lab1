@@ -2,16 +2,17 @@
 #define queue_arr_h
 #include "queue.h"  
 #define MAX_SIZE 10
-class Queue_Arr: public Queue{
 
+template <class T>
+class Queue_Arr: public Queue<T>{
 public:
     Queue_Arr();
-    void enqueue (int data);
-    int dequeue();
+    void enqueue (T data);
+    void dequeue(T &value);
     bool isEmpty();
     bool isFull();
-    int front();
-    int back();
+    void front(T &value);
+    void back(T &value);
 private:
      int array[MAX_SIZE];
      int f;
