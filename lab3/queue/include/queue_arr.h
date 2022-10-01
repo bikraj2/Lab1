@@ -13,6 +13,7 @@ public:
     bool isFull();
     void front(T &value);
     void back(T &value);
+    void traverse();
 private:
      int array[MAX_SIZE];
      int f;

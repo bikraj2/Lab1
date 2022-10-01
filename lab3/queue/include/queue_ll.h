@@ -15,6 +15,7 @@ public:
     bool isFull();
     void front(T &value);
     void back(T &value);
+    void traverse();
 private:
     LinkedList <T>l;
     int top_index;

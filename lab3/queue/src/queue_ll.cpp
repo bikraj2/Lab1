@@ -24,13 +24,21 @@ template <class T>
 void Queue_ll<T>::enqueue(T data){
     try
     {
-        if(isFull())
+        if(isEmpty())
+        {
+            l.addToHead(data);
+            top_index+=1;
+        
+        }
+        else if(isFull())
         {
             throw custom_error("Queue overflow: The queue is already FULL.");
         }
-        l.addToHead(data);
+        else
+        {
+            l.addToTail(data);
         top_index+=1;
-    }
+    }}
     catch(custom_error){
         throw;
     }
@@ -77,6 +85,11 @@ void Queue_ll<T>::back(T &value)
         throw ;
     }
 }
+template <class T>
+void Queue_ll<T> :: traverse(){
+    l.traverse();
+}
+
 
 template class Queue_ll<int>;
 template class Queue_ll<char>;

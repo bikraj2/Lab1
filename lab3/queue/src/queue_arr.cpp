@@ -70,6 +70,16 @@ void Queue_Arr<T>::back(T &value){
         throw;
     }
 }
+template <class T>
+void Queue_Arr<T>::traverse(){
+    for(int i =f+1;i!=r;i++)
+    {
+        if(i==MAX_SIZE){
+            i=0;
+        }
+        cout<<"Data is: "<<array[i]<<endl;
+    }
+}
 template class Queue_Arr<int>;
 template class Queue_Arr<char>;
 template class Queue_Arr<double>;

@@ -13,6 +13,7 @@ public:
     virtual bool isFull()=0;
     virtual void front(T &value)=0;
     virtual void back(T &value)=0;
+    virtual void traverse()=0;
 };
 
 #endif

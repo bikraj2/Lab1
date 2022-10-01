@@ -6,7 +6,7 @@
 using namespace std;
 
 int main(){
-    Queue<int> * q= new Queue_Arr<int>();
+    Queue<int> * q= new Queue_ll<int>();
     if(q->isEmpty())
     {
         cout<<"The queue is empty."<<endl;
@@ -24,14 +24,17 @@ int main(){
     }
     catch(custom_error e)
     {
-        cout<<"Caught an Exception::"<<e.what()<<endl;
+        cout<<"Caught an Exception:"<<e.what()<<endl;
     
     }
     try
     {
         q->enqueue(26);
         q->enqueue(90);
+        q->enqueue(50);
+        q->enqueue(66);
         q->back(value);
+        q->traverse();
         cout<<"The element at the back of the queue is: "<<value<<endl;
         q->front(value);
         cout<<"The element at the front of the queue is: "<<value<<endl;
@@ -42,7 +45,7 @@ int main(){
     }
     catch(custom_error e)
     {
-        cout<<"Caught an Exception::"<<e.what()<<endl;
+        cout<<"Caught an Exception:"<<e.what()<<endl;
     }
     
     try
